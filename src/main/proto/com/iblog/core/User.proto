@@ -1,7 +1,7 @@
 syntax = 'proto3';
 
 option java_package = 'com.iblog.core';
-option java_outer_classname = 'User';
+option java_outer_classname = 'UserProto';
 
 message User {
     string id = 1;
