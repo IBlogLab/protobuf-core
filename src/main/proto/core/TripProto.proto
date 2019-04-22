@@ -1,0 +1,33 @@
+syntax = 'proto3';
+
+option java_package = 'com.iblog.core';
+option java_outer_classname = 'Trip';
+
+message Trip {
+    string id = 1;
+    string owner = 2;
+    string departure = 3;
+    string destination = 4;
+    int32 amount = 5;
+
+    Status status = 6;
+    Error error = 7;
+
+    int64 expired_at = 8;
+    string created_by = 9;
+    int64 created_at = 10;
+    string last_updated_by = 11;
+    int64 last_updated_at = 12;
+
+}
+
+enum Status {
+    UNKNOWN = 0;
+    OK = 1;
+}
+
+enum Error {
+    UNKNOWN = 0;
+    OK = 1;
+
+}
