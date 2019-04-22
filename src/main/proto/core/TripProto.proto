@@ -27,6 +27,6 @@ enum Status {
 }
 
 enum Error {
-    STATUS_UNKNOWN = 0;
-    STATUS_OK = 1;
+    ERROR_UNKNOWN = 0;
+    ERROR_OK = 1;
 }
